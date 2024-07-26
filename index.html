@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfólio pessoal</title>
+    <link rel="stylesheet" href="style.css"> <!--Informa o arquivo de CSS-->
+</head>
+
+<body>
+    <nav> 
+        <!--Menu superior-->
+        <ul>
+            <li><a href="#sobre">Sobre mim</a></li>
+            <li><a href="#formacao">Formação</a></li>
+            <li><a href="#portfolio">Portfólio</a></li>
+            <li><a href="#contato">Contato</a></li>
+        </ul>
+    </nav>
+
+    <section id="sobre">
+        <h1>Sobre mim 🙋‍♂️</h1>
+        <p>Gosto de assistir séries e filmes, principalmente de ação, drama e comédia;</p>
+        <p>Tenho prazer em me desligar do mundo tocando teclado;</p>
+        <p>Passeio todos os dias com meu cachorrinho;</p>
+        <p>Amo estar em família;</p>
+        <p>Estou realizando meu sonho de aprender programação!</p>
+        <p>01 ano de experiência como desenvolvedor backend.</p>
+    </section>
+
+    <section id="formacao">
+        <h1>Formação 🎓</h1>
+        <h2>Faculdade</h2>
+        <p>Análise e Desenvolvimento de Sistemas, pela UNINTER (cursando);</p>
+        <p>Bacharelado em Nutrição e Dietética, pelo Centro Universitário do Triângulo;</p>
+        <p>Teologia livre, pela FAETEO.</p>
+        <h2>Ensino Técnico</h2>
+        <p>Curso Técnico em TI;</p>
+        <p>Informática básica;</p>
+    </section>
+
+    <section id="portfolio">
+        <h1>Portfólio 📑</h1>
+        <a href="https://github.com/365rafael" target="_blank" title="Ir para o Github">
+            <p>🔎 Github</p>
+        </a>
+        <a href="https://www.linkedin.com/in/rafaelarantes365/" target="_blank" title="Ir para o Linkedin">
+            <p>🔎 Linkedin</p>
+        </a>
+    </section>
+
+    <!--Formulário de contato-->
+    <section id="contato">
+        <h1>Contato 📞</h1>
+        <form>
+            <label for="nome">Nome:</label>
+            <input type="text" id="nome">
+
+            <label for="telefone">Telefone:</label>
+            <input type="text" id="telefone">
+
+            <label for="email">Email:</label>
+            <input type="email" id="email">
+
+            <label for="mensagem">Deixe sua mensagem:</label>
+            <textarea id="mensagem" cols="30" rows="10"></textarea>
+
+            <input type="submit" value="Enviar" onclick="enviarFormulario()">
+        </form>
+    </section>
+
+    <!--Rodapé-->
+    <footer>
+        <p>©Rafael Arantes - 2024</p>
+    </footer>
+
+    <!--Javascript para quando clicar no botão do formulário de contato-->
+    <script>
+        function enviarFormulario() {
+            alert("Enviado com sucesso!");
+        }
+    </script>
+</body>
+
+</html>
